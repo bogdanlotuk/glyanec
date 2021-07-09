@@ -9,18 +9,27 @@ html {
     box-sizing: inherit;
 }
 
-a {
-    text-decoration: none;
-    // color: #fff;
-}
+$green: #44C697;
+$grey: #1E2E36;
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    // color: #fff;
+    color: $grey;
     background-color: #fff;
 }
 
-$green: #44C697;
-$grey: #1E2E36;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
 

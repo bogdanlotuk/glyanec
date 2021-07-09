@@ -1,0 +1,76 @@
+.header {
+    &__top {
+        display: flex;
+        flex-direction: column;
+    }
+    &__top-inner {
+        margin: 0 auto;
+        padding: 0 51px;
+    }
+    &__navigation-top {
+        display: flex;
+    }
+    &__navigation-bottom {
+        display: flex;
+    }
+    &__center {}
+    &__center-inner {}
+    &__center-new {}
+}
+.container-fluid {
+}
+.navigation-top {
+    &__socials {
+        display: flex;
+    }
+    &__phone {}
+    &__menu {
+        
+    }
+}
+.socials {
+    &__text {}
+    &__items {}
+    &__link {}
+}
+.phone {
+    &__img {}
+    &__link {}
+    &__arrow {}
+}
+.menu {
+    &__list {
+        display: flex;
+    }
+    &__list-item {}
+    &__list-link {}
+}
+.navigation-bottom {
+    &__menu-product {}
+    &__logo {}
+    &__client {}
+}
+.menu-product {
+    &__list {
+        display: flex;
+    }
+    &__list-item {}
+    &__list-link {}
+}
+.logo {
+}
+.logo-img {
+}
+.client {
+    &__cart-link {}
+    &__btn {}
+}
+.new {
+    &__title {}
+    &__item-title {}
+    &__item-describe {}
+    &__link-more {}
+    &__item-numbers {}
+    &__arrow-prev {}
+    &__arrow-next {}
+}
