@@ -1,8 +1,11 @@
 .advantages {
     font-family: 'Proxima Nova Bold';
+    .container-fluid {
+        padding: 0;
+    }
     &__inner {
-        margin: 0 auto 50px;
-        padding: 100px 51px 0;
+        margin: 0 auto 0;
+        padding: 100px 51px 50px;
         display: flex;
         flex-direction: column;
         align-items: center;

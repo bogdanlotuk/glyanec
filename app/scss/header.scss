@@ -1,5 +1,8 @@
 .header {
     font-family: 'Proxima Nova Bold';
+    .container-fluid {
+        padding: 0;
+    }
     &__top {
         display: flex;
         flex-direction: column;
@@ -29,8 +32,7 @@
         width: 100%;
     }
     &__center-new {}
-}
-.container-fluid {
+    
 }
 .navigation-top {
     border-bottom: 1px solid rgba(30, 46, 54, 0.6);
