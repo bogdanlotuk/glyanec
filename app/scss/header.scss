@@ -1,75 +1,189 @@
 .header {
+    font-family: 'Proxima Nova Bold';
     &__top {
         display: flex;
         flex-direction: column;
+        max-width: 1920px;
     }
     &__top-inner {
         margin: 0 auto;
         padding: 0 51px;
+        width: 100%;
     }
     &__navigation-top {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     &__navigation-bottom {
         display: flex;
+        justify-content: space-between;
     }
-    &__center {}
-    &__center-inner {}
+    &__center {
+        padding-bottom: 115px;
+        background: center / cover no-repeat url(../img/header__bg.jpg);
+    }
+    &__center-inner {
+        margin: 0 auto;
+        padding: 0 51px;
+        width: 100%;
+    }
     &__center-new {}
 }
 .container-fluid {
 }
 .navigation-top {
+    border-bottom: 1px solid rgba(30, 46, 54, 0.6);
     &__socials {
         display: flex;
+        margin-right: 60px;
     }
-    &__phone {}
+    &__phone {
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+    }
     &__menu {
-        
+        padding: 18px 0;
     }
 }
 .socials {
-    &__text {}
+    &__text {
+        display: flex;
+        align-items: center;
+    }
     &__items {}
     &__link {}
 }
 .phone {
     &__img {}
-    &__link {}
+    &__link {
+        padding: 0 5px;
+    }
     &__arrow {}
 }
 .menu {
     &__list {
         display: flex;
     }
-    &__list-item {}
-    &__list-link {}
+    &__list-item {
+        display: flex;
+    }
+    &__list-item + &__list-item {
+        margin-left: 15px;
+    }
+    &__list-link {
+        font-size: 18px;
+        line-height: 125%;
+        text-transform: uppercase;  
+        height: 100%;
+    }
 }
 .navigation-bottom {
+    display: flex;
+    align-items: center;
     &__menu-product {}
     &__logo {}
     &__client {}
 }
 .menu-product {
+    display: flex;
+    align-items: center;
     &__list {
         display: flex;
     }
-    &__list-item {}
-    &__list-link {}
+    &__list-item {
+        display: flex;
+    }
+    &__list-item + &__list-item {
+        margin-left: 15px;
+    }
+    &__list-link {
+        font-size: 18px;
+        line-height: 125%;
+        text-transform: uppercase;
+        height: 100%;
+    }
 }
 .logo {
+    padding: 15px 0;
+    margin-right: auto;
+    margin-left: 115px;
 }
 .logo-img {
 }
 .client {
-    &__cart-link {}
-    &__btn {}
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    &__cart-link {
+        position: relative;
+        padding-left: 34px;
+        font-size: 18px;
+        line-height: 170%;
+        text-transform: uppercase;
+    }
+    &__cart-link::before {
+        position: absolute; 
+        content: "";
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/cart.svg);
+        left: 0;
+        top: 0;
+    }
+    &__btn {
+        padding: 14px 46px;
+        background: $green;
+        border-radius: 3px;
+        color: $white;
+        font-size: 18px;
+        line-height: 125%;
+        text-transform: uppercase;
+        border: none;
+    }
 }
 .new {
-    &__title {}
-    &__item-title {}
-    &__item-describe {}
-    &__link-more {}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 670px;
+    max-width: 462px;
+    padding: 100px 75px;
+    background-color: $white;
+    border-left: 15px solid $green;
+    &__title {
+        font-size: 64px;
+        line-height: 100%;
+        margin-bottom: 50px;
+    }
+    &__item-title {
+        font-size: 36px;
+        line-height: 125%;
+        margin-bottom: 10px;
+    }
+    &__item-describe {
+        font-family: 'Proxima Nova';
+        font-size: 36px;
+        line-height: 125%;
+        margin-bottom: 53px;
+    }
+    &__link-more {
+        display: flex;
+        padding: 14px 46px;
+        background: $green;
+        border-radius: 3px;
+        color: $white;
+        font-size: 18px;
+        line-height: 125%;
+        text-transform: uppercase;
+        border: none;
+        margin-bottom: 50px;
+    }
+    &__controls {
+
+    }
     &__item-numbers {}
     &__arrow-prev {}
     &__arrow-next {}

@@ -11,9 +11,10 @@ html {
 
 $green: #44C697;
 $grey: #1E2E36;
+$white: #fff;
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
     font-size: 16px;
     color: $grey;
     background-color: #fff;
@@ -29,7 +30,11 @@ a:hover {
 
 ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
-
+p {
+    margin: 0;
+}
 
 
