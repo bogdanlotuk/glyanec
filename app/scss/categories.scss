@@ -1,0 +1,119 @@
+.categories {
+    font-family: 'Proxima Nova Bold';
+    &__inner {
+        margin: 0 auto 50px;
+        padding: 100px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // width: 100%;
+    }
+    &__title {}
+    &__general {
+        width: 100%;
+        // padding: 0 51px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__general-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 109px;
+        margin-bottom: 84px;
+        width: 100%;
+    }
+    &__general-top-item {
+    }
+    &__general-items {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        column-gap: 30px;
+        row-gap: 50px;
+        padding-bottom: 65px;
+    }
+    &__general-item {}
+    &__general-link {}
+
+}
+.container-fluid {
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    max-width: 586px;
+    height: 360px;
+    // &__general {
+    // }
+    &__img {
+        position: relative;
+    }
+    &__img-link {
+        
+    }
+    &__sale {
+        position: absolute;        
+        padding: 10px 0;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    &__new-product {
+        font-size: 18px;
+        line-height: 125%;
+        text-transform: uppercase;
+        background-color: $black;
+    }
+    &__hit {
+        font-size: 18px;
+        line-height: 125%;
+        text-transform: uppercase;
+        background-color: $black;
+    }
+    &__promotional {
+        font-size: 18px;
+        line-height: 125%;
+        text-transform: uppercase;
+        background-color: $red;
+    }
+    &__new-product,
+    &__hit,
+    &__promotional {
+        padding: 5px 15px;
+        color: $white;
+    }
+
+
+    &__text {
+        font-size: 24px;
+        line-height: 125%;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    &__text-description {}
+    &__text-price {}
+}
+
+.top-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    &__name {
+        font-size: 24px;
+        line-height: 125%;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+    svg {
+        margin: auto 0;
+    }
+}
+

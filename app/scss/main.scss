@@ -12,6 +12,8 @@ html {
 $green: #44C697;
 $grey: #1E2E36;
 $white: #fff;
+$black: #000;
+$red: #FF1B1B;
 
 body {
     font-family: 'Proxima Nova', sans-serif;
@@ -37,4 +39,33 @@ p {
     margin: 0;
 }
 
+.title {
+    font-size: 48px;
+    line-height: 125%;
+    margin-bottom: 50px;
+    position: relative;
+}
 
+.title::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 100%;
+    background-color: $green;
+    left: -5px;
+    z-index: -10;
+}
+
+.btn {
+    padding: 14px 46px;
+    background: $green;
+    border-radius: 3px;
+    color: $white;
+    font-size: 18px;
+    line-height: 125%;
+    text-transform: uppercase;
+    border: none;
+}
+.btn:hover {
+    color: $white;
+}

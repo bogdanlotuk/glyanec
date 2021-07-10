@@ -1,27 +1,71 @@
 .advantages {
     font-family: 'Proxima Nova Bold';
     &__inner {
-        margin: 0 auto;
+        margin: 0 auto 50px;
         padding: 100px 51px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
     &__title {
-        font-size: 48px;
-        line-height: 125%;
-        margin-bottom: 50px;
+    }
+    &__slider {
+        display: flex;
+        gap: 30px;
+    }
+    &__slider-item {
+        width: 586px;
+        height: 350px;
+        color: $white;
+        display: flex;
+        // flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;  
         position: relative;
+        overflow: hidden;
+        padding: 30px;
     }
-    &__title::before {
+    &__slider-item:hover {
+        .advantages__slider-item-general {
+            bottom: 30px;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+    &__slider-item:nth-child(1) {
+        background: center / cover no-repeat url(../img/advantages__slide1.jpg);
+    }
+    &__slider-item:nth-child(2) {
+        background: center / cover no-repeat url(../img/advantages__slide2.jpg);
+    }
+    &__slider-item:nth-child(3) {
+        background: center / cover no-repeat url(../img/advantages__slide3.jpg);
+    }
+    &__slider-item-general {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         position: absolute;
-        content: "";
-        width: 20px;
-        height: 100%;
-        background-color: $green;
-        left: -5px;
-        z-index: -10;
+        bottom: -70px;
     }
-    &__slider {}
+
+    &__slider-item-img {
+    }
+
+    &__slider-item-title {
+        display: flex;
+        font-size: 36px;
+        line-height: 125%;
+        margin-bottom: 18px;
+        border-bottom: 3px solid $green;
+    }
+
+    &__slider-item-text {
+        font-family: 'Proxima Nova';
+        max-width: 90%;
+        font-size: 18px;
+        line-height: 125%;
+    }
+
 }
 
