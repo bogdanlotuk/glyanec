@@ -16,6 +16,27 @@
     &__slider {
         display: flex;
         gap: 30px;
+        position: relative;
+        &-arrow-left {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 15px;
+            top: 50%;
+            z-index: 10;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        &-arrow-right {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            right: 15px;
+            top: 50%;
+            z-index: 10;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
     }
     &__slider-item {
         width: 586px;
@@ -32,6 +53,7 @@
     &__slider-item:hover {
         .advantages__slider-item-general {
             bottom: 30px;
+            gap: 0;
             transition: all 0.5s ease-in-out;
         }
     }
@@ -49,7 +71,8 @@
         flex-direction: column;
         align-items: flex-start;
         position: absolute;
-        bottom: -70px;
+        bottom: -53px;
+        gap: 20px;
     }
 
     &__slider-item-img {

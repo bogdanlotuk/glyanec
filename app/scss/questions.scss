@@ -5,7 +5,7 @@
     font-family: 'Proxima Nova Bold';
     &__inner {
         margin: 0 auto;
-        padding: 50px 0 100px;
+        padding: 50px 0 110px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -19,7 +19,8 @@
     &__general-consultation {
         width: 528px;
         height: 457px;
-        padding: 50px 51px 50px 30px;
+        padding: 51px 51px 50px 30px;
+        border-left: 15px solid $green;   
         background-color: $white;
         margin: 100px 0 118px 0;
     }
@@ -51,7 +52,11 @@
         font-family: 'Proxima Nova';
         font-size: 18px;
         line-height: 125%;
-        color: $grey;        
+        color: $grey;   
+        margin-bottom: 16px; 
+        border-radius: 3px;
+        border: 1px solid $grey;
+        outline: none;    
     }
     &__phone {
         width: 100%;
@@ -61,7 +66,10 @@
         font-family: 'Proxima Nova';
         font-size: 18px;
         line-height: 125%;
-        color: $grey;        
+        color: $grey; 
+        border-radius: 3px;
+        border: 1px solid $grey;
+        outline: none;       
     }
     &__btn {
         width: 100%;
@@ -73,14 +81,22 @@
         font-size: 18px;
         line-height: 125%;
     }
-    // &__name::active,
-    // &__phone::active {
-    //     border: 2px solid $green;
-    // }
-    &__info{
+    &__name:active,
+    &__name:focus,
+    &__phone:active, 
+    &__phone:focus {
+        border: 1px solid $green;
+        // outline: 1px solid $green;
+
+    }
+    &__info {
         font-family: 'Proxima Nova';
         font-size: 18px;
-        line-height: 125%;
+        line-height: 130%;
+        width: 90%;
+    }
+    &__info-big {
+        font-family: 'Proxima Nova Bold';
     }
 }
 

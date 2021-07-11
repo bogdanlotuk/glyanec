@@ -18,7 +18,7 @@
         // align-items: center;
     }
     &__general-text {
-        width: 791px;
+        width: 805px;
         padding: 50px 30px 50px 50px;
         margin: 100px 0;
         background-color: $white;
@@ -31,6 +31,7 @@
         color: $green;        
         font-size: 18px;
         line-height: 125%;
+        text-transform: uppercase;
     }
     &__general-img {
         position: absolute;

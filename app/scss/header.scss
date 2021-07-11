@@ -21,6 +21,7 @@
     &__navigation-bottom {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     &__center {
         padding-bottom: 115px;
@@ -38,7 +39,8 @@
     border-bottom: 1px solid rgba(30, 46, 54, 0.6);
     &__socials {
         display: flex;
-        margin-right: 60px;
+        margin-right: 51px;
+        
     }
     &__phone {
         margin-right: auto;
@@ -46,13 +48,17 @@
         align-items: center;
     }
     &__menu {
-        padding: 18px 0;
+        padding: 19px 0;
     }
 }
 .socials {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     &__text {
-        display: flex;
-        align-items: center;
+        font-family: 'Proxima Nova Bold';
+        font-size: 18px;
+        line-height: 125%;
     }
     &__items {}
     &__link {}
@@ -61,6 +67,9 @@
     &__img {}
     &__link {
         padding: 0 5px;
+        font-size: 18px;
+        line-height: 125%;
+        text-transform: uppercase;
     }
     &__arrow {}
 }
@@ -72,20 +81,36 @@
         display: flex;
     }
     &__list-item + &__list-item {
-        margin-left: 15px;
+        margin-left: 16px;
     }
     &__list-link {
         font-size: 18px;
         line-height: 125%;
         text-transform: uppercase;  
         height: 100%;
+        position: relative;
+        
     }
+    &__list-link:hover {        
+        &::after{            
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 3px;
+            background-color: $green;
+            bottom: -3px;
+            left: 0;            
+        }
+    }
+
 }
 .navigation-bottom {
     display: flex;
     align-items: center;
     &__menu-product {}
-    &__logo {}
+    &__logo {
+        margin-left: 115px;
+    }
     &__client {}
 }
 .menu-product {
@@ -98,7 +123,7 @@
         display: flex;
     }
     &__list-item + &__list-item {
-        margin-left: 15px;
+        margin-left: 15.5px;
     }
     &__list-link {
         font-size: 18px;
@@ -106,11 +131,14 @@
         text-transform: uppercase;
         height: 100%;
     }
+    .arrow {
+        margin-left: 3px;
+    }
 }
 .logo {
     padding: 15px 0;
     margin-right: auto;
-    margin-left: 115px;
+
 }
 .logo-img {
 }
@@ -122,6 +150,7 @@
     &__cart-link {
         position: relative;
         padding-left: 34px;
+        padding-bottom: 3px;
         font-size: 18px;
         line-height: 170%;
         text-transform: uppercase;
@@ -132,7 +161,7 @@
         width: 30px;
         height: 30px;
         background-image: url(../img/cart.svg);
-        left: 0;
+        left: -2px;
         top: 0;
     }
     &__btn {
@@ -152,7 +181,7 @@
     align-items: center;
     height: 670px;
     max-width: 462px;
-    padding: 100px 75px;
+    padding: 100px 75px 100px 65px;
     background-color: $white;
     border-left: 15px solid $green;
     &__title {
@@ -169,7 +198,8 @@
         font-family: 'Proxima Nova';
         font-size: 36px;
         line-height: 125%;
-        margin-bottom: 53px;
+        margin-bottom: 28px;
+        text-align: center;
     }
     &__link-more {
         // display: flex;
@@ -184,9 +214,35 @@
         margin-bottom: 50px;
     }
     &__controls {
-
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 8px;
+        row-gap: 5px;
     }
-    &__item-numbers {}
-    &__arrow-prev {}
-    &__arrow-next {}
+    &__item-numbers {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        line-height: 125%;
+        text-transform: uppercase;
+    }
+    &__item-numbers-big {
+        font-size: 36px;
+        line-height: 125%;
+    }
+    &__arrow-prev {
+        background: transparent;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 0;
+    }
+    &__arrow-next {
+        background: transparent;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 0;
+    }
 }

@@ -9,32 +9,35 @@
         // padding: 50px 0 0;
         display: flex;
         // justify-content: space-between;
+        position: relative;
     
     }
     &__general {
         background: $grey;
         width: 831px;
         height: 520px;
-        padding: 50px 51px 13px;
+        padding: 50px 51px 15px;
         display: flex;   
         flex-direction: column;  
         justify-content: space-between;
     }
     &__general-center {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         margin-bottom: auto;
+
     }
     &__logo {
         width: 100%;
         margin: 0 0 50px 0;
         padding: 0;
     }
-    &__menu-product {}
+    &__menu-product {
+    }
     &__menu-product-list {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 14px;
     }
     &__menu-product-item {}
     &__menu-product-link {
@@ -53,11 +56,13 @@
         left: 0;
         top: 50%;
     }
-    &__menu {}
+    &__menu {
+        margin-left: 55px;
+    }
     &__menu-list {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 14px;
     }
     &__menu-item {}
     &__menu-link {
@@ -81,10 +86,15 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
+        margin-left: 86px;
     }
     &__contacts-address {
         position: relative;
         padding-left: 30px;
+        font-family: 'Proxima Nova';
+        font-size: 18px;
+        line-height: 125%;
+        margin-bottom: 1px;
     }
     &__contacts-address::before {
         position: absolute;
@@ -97,6 +107,10 @@
     &__contacts-time {
         position: relative;
         padding-left: 30px;
+        font-family: 'Proxima Nova';
+        font-size: 18px;
+        line-height: 125%;
+        margin-bottom: 4px;
     }
     &__contacts-time::before {
         position: absolute;
@@ -113,6 +127,8 @@
         position: relative;        
         padding-left: 30px;
         color: $green;
+        font-size: 18px;
+        line-height: 125%;
     }
     &__contacts-phone::before {
         position: absolute;
@@ -125,6 +141,17 @@
     }
     &__contacts-socials {
         margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 7px;
+        .socials {
+            &__text {
+                font-family: 'Proxima Nova';
+                font-size: 18px;
+                line-height: 125%;
+            }
+        }
     }
     &__bottom {
         width: 100%;
@@ -132,10 +159,20 @@
         justify-content: space-between;
         align-items: center;
     }
-    &__bottom-company {}
-    &__bottom-glyanec {
+    &__bottom-company {
+        font-family: 'Proxima Nova';
+        font-size: 14px;
+        line-height: 120%;
+    }
+    &__bottom-glyanec {        
         padding-left: 23px;
         position: relative;
+        font-family: 'Cuprum';
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.15px;
+        text-transform: uppercase;
+        padding-bottom: 3px;
     }
     &__bottom-glyanec::before {
         position: absolute;
@@ -151,6 +188,14 @@
         z-index: -10;
     }
     &__img-link {}
+    &__arrow-up-link {
+        position: absolute;
+        top: -18px;
+        left: 25px;
+    }
+    &__arrow-up-img {
+
+    }
 }
 
 .logo {
@@ -159,9 +204,13 @@
     fill: $white;
 }
 .socials {
-    &__text {}
+    &__text {
+    }
     &__items {}
     &__link {        
+    }
+    &__link:first-child {  
+        margin-left: 2px;
     }
     &__link-svg { 
         fill: $white;
