@@ -39,6 +39,7 @@
     .advantages {
         &__slider-item-title {
             font-size: 28px;
+            width: 90%;
         }
     }
 }
@@ -109,7 +110,7 @@
             font-size: 14px;
         }
         &__slider-item-general {
-            bottom: -83px;
+            bottom: -63px;
             gap: 30px;
         }
     }
@@ -318,7 +319,7 @@
             padding: 50px 15px 25px;
         }
         &__slider-item-general {
-            bottom: -83px;
+            bottom: -65px;
         }
         &__slider-item-title {
             font-size: 24px;

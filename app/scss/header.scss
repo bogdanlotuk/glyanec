@@ -15,9 +15,11 @@
     &__top-inner {
         padding: 0 51px;
         width: 100%;
+        max-width: 1920px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
     }
     &__center {
         margin-top: 165px;
@@ -31,6 +33,7 @@
     }
 }
 .navigation-top {
+    max-width: 1920px;
     border-bottom: 1px solid rgba(30, 46, 54, 0.6);
     &__socials {
         display: flex;
