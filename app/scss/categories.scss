@@ -33,8 +33,8 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
-        // column-gap: 25px;
+        justify-content: center;
+        column-gap: 20px;
         row-gap: 50px;
         padding-bottom: 50px;
     }
@@ -128,6 +128,7 @@
 
 .item:hover {
     // cursor: pointer;
+    color: $white;
     position: relative;
     .item__general{
         position: absolute;

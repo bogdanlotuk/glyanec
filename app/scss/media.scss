@@ -1,0 +1,233 @@
+@media (max-width: 1649.98px) {
+    .header {
+        .navigation-bottom {
+            &__logo {
+                margin-left: 20px;
+                margin-right: 0;
+            }
+
+        }
+    }
+    .about {
+        &__general-img {
+            width: 100%;
+
+        }
+        &__general-img-link {
+            max-width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .questions {
+        &__general-img {
+            width: 100%;
+
+        }
+        &__general-img-link {
+            max-width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+@media (max-width: 1549.98px) {
+    .header {
+        .navigation-bottom {
+            &__logo {
+                display: none;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1299.98px) {
+    .header {
+        .navigation-top {
+            &__socials {
+                margin-right: 0;
+            }
+            &__phone {
+                display: none;
+            }
+        }
+        &__top-inner {
+            flex-direction: column;
+        }
+        .menu-product {
+            padding-top: 20px;
+        }
+        &__center {
+            margin-top: 250px;
+        }
+    }
+}
+
+@media (max-width: 1199.98px) { 
+    .categories {
+        &__general-top {
+            padding: 0 30px;
+            flex-wrap: wrap;
+            row-gap: 30px;
+            justify-content: center;
+        }
+        
+        .top-item {
+            width: 33%;
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .categories {
+        &__general-top {
+            padding: 0;
+        }
+        &__img-link {
+            max-width: 768px;
+            height: auto;
+            // object-fit: cover;
+        }
+    }
+    .about {
+        &__general-text {
+            max-width: 95%;
+        }
+    }
+    .questions {
+        &__general-consultation {
+            max-width: 95%;
+        }
+    }
+    .footer {
+        &__general {
+            width: 100%;            
+        }
+        &__logo {
+            display: flex;
+            justify-content: center;
+        }
+        &__general-center {
+            justify-content: space-between;        
+        }
+        &__menu {
+            margin-left: 0;
+        }
+        &__contacts {
+            margin-left: 0;
+        }
+        &__img {
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .header {
+        // .navigation-top {
+            
+        // }
+
+        &__top {
+            display: none;
+        }
+        .menu-product {
+            padding-top: 20px;
+        }
+        &__center {
+            margin-top: 0;
+            position: relative;
+        }
+        &__center-inner {
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+        }
+        .burger {
+            display: block;
+            position: fixed;
+            top: 30px;
+            right: 30px;
+        }
+    }
+    .categories {
+        &__inner {
+            padding: 50px 0;
+        }
+        
+        .item {
+            width: 560px;
+
+        }
+        .item__img-link {
+            width: 560px;
+            // object-fit: cover;
+        }
+    }
+    .about {
+        &__general-text {
+            overflow: scroll;
+        }
+    }
+    .footer {
+        &__general {
+            height: auto;
+            gap: 30px;
+        }
+        &__logo {
+            margin-bottom: 0;
+        }
+        &__general-center {
+            justify-content: center;   
+            margin-bottom: 0;
+        }
+        &__menu {
+            display: none;
+        }
+        &__menu-product {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .categories {
+        .item {
+            width: 460px;
+        }
+        .item__img-link {
+            width: 460px;
+        }
+    }
+}
+
+@media (max-width: 479.98px) {
+    .header {
+        &__center-inner {
+            padding: 20px 15px;
+        }
+        .new {
+            padding: 20px 10px;
+        }
+    }
+    .categories {
+        &__general-top {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__link {
+            display: flex;
+            justify-content: center;
+        }
+        .item {
+            width: 95%;
+        }
+        .item__img-link {
+            width: 100%;
+        }
+    }
+}

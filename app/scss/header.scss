@@ -6,24 +6,25 @@
     &__top {
         display: flex;
         flex-direction: column;
-        max-width: 1920px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color: $white;
+        z-index: 50;
     }
     &__top-inner {
-        margin: 0 auto;
         padding: 0 51px;
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     &__navigation-top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
     &__navigation-bottom {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
     &__center {
+        margin-top: 165px;
         padding-bottom: 115px;
         background: center / cover no-repeat url(../img/header__bg.jpg);
     }
@@ -110,6 +111,7 @@
     &__menu-product {}
     &__logo {
         margin-left: 115px;
+        margin-right: auto;
     }
     &__client {}
 }
@@ -137,7 +139,7 @@
 }
 .logo {
     padding: 15px 0;
-    margin-right: auto;
+    
 
 }
 .logo-img {
@@ -154,6 +156,7 @@
         font-size: 18px;
         line-height: 170%;
         text-transform: uppercase;
+        margin: 36px 0;
     }
     &__cart-link::before {
         position: absolute; 
@@ -165,14 +168,6 @@
         top: 0;
     }
     &__btn {
-        // padding: 14px 46px;
-        // background: $green;
-        // border-radius: 3px;
-        // color: $white;
-        // font-size: 18px;
-        // line-height: 125%;
-        // text-transform: uppercase;
-        // border: none;
     }
 }
 .new {
@@ -181,7 +176,7 @@
     align-items: center;
     height: 670px;
     max-width: 462px;
-    padding: 100px 75px 100px 65px;
+    padding: 100px 75px 100px 62px;
     background-color: $white;
     border-left: 15px solid $green;
     &__title {
@@ -202,15 +197,6 @@
         text-align: center;
     }
     &__link-more {
-        // display: flex;
-        // padding: 14px 46px;
-        // background: $green;
-        // border-radius: 3px;
-        // color: $white;
-        // font-size: 18px;
-        // line-height: 125%;
-        // text-transform: uppercase;
-        // border: none;
         margin-bottom: 50px;
     }
     &__controls {

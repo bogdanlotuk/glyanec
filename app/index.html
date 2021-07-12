@@ -13,8 +13,8 @@
         <header class="header" id="header">
             <div class="container-fluid">    
                     <div class="header__top">
-                        <div class="header__top-inner">
-                            <div class="header__navigation-top navigation-top"> 
+                        <div class="header__navigation-top navigation-top"> 
+                            <div class="header__top-inner">
                                 <div class="navigation-top__socials socials">
                                     <p class="socials__text">Ми в соціальних мережах:</p>
                                     <div class="socials__items">
@@ -50,7 +50,9 @@
                                     </ul>
                                 </nav>
                             </div>
-                            <div class="header__navigation-bottom navigation-bottom">  
+                        </div>
+                        <div class="header__navigation-bottom navigation-bottom">  
+                            <div class="header__top-inner">
                                 <nav class="navigation-bottom__menu-product menu-product">
                                     <ul class="menu-product__list">
                                         <li class="menu-product__list-item"><a class="menu-product__list-link" href="#">дивани</a><span class="arrow"><img src="img/arrow.svg" alt=""></span></li>
@@ -94,12 +96,18 @@
                                     </button>
                                 </div>
                             </div>
+                            <div class="burger" id="burger">
+                                <span class="burger__line burger__line--1"></span>
+                                <span class="burger__line burger__line--2"></span>
+                                <span class="burger__line burger__line--3"></span>
+                                <span class="burger__line burger__line--4"></span>
+                            </div> 
                         </div>
                     </div>
             </div>
         </header>
         <main>
-            <section class="advantages">
+            <!-- <section class="advantages">
                 <div class="container-fluid">
                     <div class="advantages__inner">
                         <h3 class="advantages__title title">Наші переваги</h3>                    
@@ -143,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <section class="categories">
                 <div class="container-fluid">
                     <div class="categories__inner">
@@ -428,10 +436,10 @@
                             </nav>
                             <nav class="footer__menu">
                                 <ul class="footer__menu-list">
+                                    <li class="footer__menu-item"><a class="footer__menu-link" href="#">акції</a></li>
                                     <li class="footer__menu-item"><a class="footer__menu-link" href="#">доставка та оплата</a></li>
                                     <li class="footer__menu-item"><a class="footer__menu-link" href="#">про нас</a></li>
                                     <li class="footer__menu-item"><a class="footer__menu-link" href="#">контакти</a></li>
-                                    <li class="footer__menu-item"><a class="footer__menu-link" href="#">акції</a></li>
                                 </ul>
                             </nav>
                             <div class="footer__contacts">
@@ -468,7 +476,6 @@
                             <a class="footer__bottom-glyanec" href="#">Глянець — розробка інтернет-магазинів</a>
                         </div>
                     </div>
-
                     <div class="footer__img">
                         <img class="footer__img-link" src="img/footer__bg.jpg" alt="">
                     </div>

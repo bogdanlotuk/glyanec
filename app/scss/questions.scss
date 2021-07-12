@@ -18,7 +18,7 @@
     }
     &__general-consultation {
         width: 528px;
-        height: 457px;
+        min-height: 457px;
         padding: 51px 51px 50px 30px;
         border-left: 15px solid $green;   
         background-color: $white;
