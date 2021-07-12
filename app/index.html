@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Furniture.test</title>
@@ -107,12 +108,58 @@
             </div>
         </header>
         <main>
-            <!-- <section class="advantages">
+            <section class="advantages">
                 <div class="container-fluid">
                     <div class="advantages__inner">
                         <h3 class="advantages__title title">Наші переваги</h3>                    
-                        <div class="advantages__slider">  
-                            <a class="advantages__slider-link" href="#">                         
+                        <div class="advantages__slider"> 
+                            <div class="swiper-container swiper-advantages">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide card">
+                                        <a class="advantages__slider-link" href="#">                         
+                                            <div class="advantages__slider-item">
+                                                <div class="advantages__slider-item-general">
+                                                    <h4 class="advantages__slider-item-title">Меблі преміум класу</h4>
+                                                    <p class="advantages__slider-item-text">За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України</p>
+                                                </div>
+                                            </div>
+                                        </a> 
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <a class="advantages__slider-link" href="#">  
+                                            <div class="advantages__slider-item">
+                                                <div class="advantages__slider-item-general">
+                                                    <h4 class="advantages__slider-item-title">Надійність</h4>
+                                                    <p class="advantages__slider-item-text">За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide card">
+                                        <a class="advantages__slider-link" href="#">  
+                                            <div class="advantages__slider-item">
+                                                <div class="advantages__slider-item-general">
+                                                    <h4 class="advantages__slider-item-title">Безкоштовна доставка</h4>
+                                                    <p class="advantages__slider-item-text">За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <btn class="swiper-button-prev">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 31C24.2843 31 31 24.2843 31 16C31 7.71573 24.2843 1 16 1C7.71573 1 1 7.71573 1 16C1 24.2843 7.71573 31 16 31Z" stroke="white"/>
+                                        <path d="M12.4783 15.8695C12.4783 15.6592 12.5566 15.4488 12.7128 15.2884L17.6323 10.2408C17.9452 9.91973 18.4526 9.91973 18.7654 10.2408C19.0782 10.5618 19.0782 11.0823 18.7654 11.4034L14.4124 15.8695L18.7652 20.3357C19.0781 20.6568 19.0781 21.1773 18.7652 21.4982C18.4524 21.8194 17.9451 21.8194 17.6321 21.4982L12.7127 16.4507C12.5564 16.2902 12.4783 16.0799 12.4783 15.8695Z" fill="white"/>
+                                    </svg>                                                                       
+                                </btn>
+                                <btn class="swiper-button-next">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill="white"/>
+                                        <path d="M18.5217 14.8695C18.5217 15.0799 18.4434 15.2902 18.2872 15.4506L13.3677 20.4982C13.0548 20.8193 12.5474 20.8193 12.2346 20.4982C11.9218 20.1772 11.9218 19.6567 12.2346 19.3356L16.5876 14.8695L12.2348 10.4033C11.9219 10.0822 11.9219 9.56176 12.2348 9.24082C12.5476 8.91957 13.0549 8.91957 13.3679 9.24082L18.2873 14.2883C18.4436 14.4488 18.5217 14.6592 18.5217 14.8695Z" fill="#1E2E36"/>
+                                    </svg>                                                                       
+                                </btn>
+                            </div> 
+                            <!-- <a class="advantages__slider-link" href="#">                         
                                 <div class="advantages__slider-item">
                                     <div class="advantages__slider-item-general">
                                         <h4 class="advantages__slider-item-title">Меблі преміум класу</h4>
@@ -147,11 +194,11 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill="white"/>
                                     <path d="M18.5217 14.8695C18.5217 15.0799 18.4434 15.2902 18.2872 15.4506L13.3677 20.4982C13.0548 20.8193 12.5474 20.8193 12.2346 20.4982C11.9218 20.1772 11.9218 19.6567 12.2346 19.3356L16.5876 14.8695L12.2348 10.4033C11.9219 10.0822 11.9219 9.56176 12.2348 9.24082C12.5476 8.91957 13.0549 8.91957 13.3679 9.24082L18.2873 14.2883C18.4436 14.4488 18.5217 14.6592 18.5217 14.8695Z" fill="#1E2E36"/>
                                 </svg>                                                                       
-                            </btn>
+                            </btn> -->
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
             <section class="categories">
                 <div class="container-fluid">
                     <div class="categories__inner">
@@ -415,7 +462,7 @@
                 <div class="footer__inner">
                     <div class="footer__general">
                         <a class="footer__logo logo">
-                            <svg class="logo-svg" width="360" height="75" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="logo-svg" viewBox = "0 0 360 75" width="360" height="75" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M31.833 29.488h56.55v-7.981h-56.55V8.042h56.55V.061H27.478c-2.024 0-3.68 1.645-3.68 3.655v39.298h8.035V29.488z" fill="#44C697"/>
                                 <path d="M97.584 0h-4.417v42.953h8.035V3.656C101.264 1.645 99.608 0 97.584 0z"/>
                                 <path d="M107.581 27.965V49.29H17.419V27.965H4.6a4.579 4.579 0 00-4.6 4.57v12.124c0 2.559 2.085 4.57 4.6 4.57h2.944l1.288 14.987V75h3.312l3.864-10.784h92.984L112.856 75h3.312V64.216l1.288-14.988h2.944c2.576 0 4.6-2.071 4.6-4.57V32.536c0-2.56-2.085-4.57-4.6-4.57h-12.819z"/>
@@ -484,6 +531,7 @@
             </div>
         </footer>
     </div>
-    <!-- <script type="text/javascript" src="js/main.js"></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
