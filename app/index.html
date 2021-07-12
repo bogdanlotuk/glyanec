@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Furniture.test</title>
@@ -38,7 +37,7 @@
                                 </div>
                                 <div class="navigation-top__phone phone">
                                     <span class="phone__img"><img src="img/phone.svg" alt=""></span>
-                                    <a class="phone__link" href="#">(099) 111 22 33</a>
+                                    <a class="phone__link" href="tel:+380991112233">(099) 111 22 33</a>
                                     <span class="phone__arrow-phone"><img src="img/arrow-phone.svg" alt=""></span>
                                 </div>
                                 <nav class="navigation-top__menu menu">
@@ -66,7 +65,7 @@
                                     <img class="logo-img" src="img/logo.svg" alt="">
                                 </a>
                                 <div class="navigation-bottom__client client">
-                                    <a href="" class="client__cart-link">кошик</a>
+                                    <a class="client__cart-link" href="#">кошик</a>
                                     <button class="client__btn btn">замовити дзвінок</button>
                                 </div>
                             </div>
@@ -80,7 +79,7 @@
                                 <p class="new__item-describe">Це новий рівень комфортного сну</p>
                                 <a href="" class="new__link-more btn">Детальніше</a>
                                 <div class="new__controls">
-                                    <p class="new__item-numbers"> <span class="new__item-numbers-big">01</span>/ 04</p>
+                                    <p class="new__item-numbers"><span class="new__item-numbers-big">01</span>/ 04</p>
                                     <button class="new__arrow-prev">
                                         <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 31C23.7843 31 30.5 24.2843 30.5 16C30.5 7.71573 23.7843 1 15.5 1C7.21573 1 0.5 7.71573 0.5 16C0.5 24.2843 7.21573 31 15.5 31Z" stroke="#1E2E36"/>
@@ -103,31 +102,32 @@
             <section class="advantages">
                 <div class="container-fluid">
                     <div class="advantages__inner">
-                        <h3 class="advantages__title title">Наші переваги</h3>
-                    
-                        <div class="advantages__slider">
-                            
-                            <div class="advantages__slider-item">
-                                <!-- <img class="advantages__slider-item-img img-fluid" src="img/advantages__slide1.jpg" alt=""> -->
-                                <div class="advantages__slider-item-general">
-                                    <h4 class="advantages__slider-item-title">Меблі преміум класу</h4>
-                                    <p class="advantages__slider-item-text">За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України</p>
+                        <h3 class="advantages__title title">Наші переваги</h3>                    
+                        <div class="advantages__slider">  
+                            <a class="advantages__slider-link" href="#">                         
+                                <div class="advantages__slider-item">
+                                    <div class="advantages__slider-item-general">
+                                        <h4 class="advantages__slider-item-title">Меблі преміум класу</h4>
+                                        <p class="advantages__slider-item-text">За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="advantages__slider-item">
-                                <!-- <img class="advantages__slider-item-img img-fluid" src="img/advantages__slide2.jpg" alt=""> -->
-                                <div class="advantages__slider-item-general">
-                                    <h4 class="advantages__slider-item-title">Надійність</h4>
-                                    <p class="advantages__slider-item-text">За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України</p>
+                            </a> 
+                            <a class="advantages__slider-link" href="#">  
+                                <div class="advantages__slider-item">
+                                    <div class="advantages__slider-item-general">
+                                        <h4 class="advantages__slider-item-title">Надійність</h4>
+                                        <p class="advantages__slider-item-text">За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="advantages__slider-item">
-                                <!-- <img class="advantages__slider-item-img img-fluid" src="img/advantages__slide3.jpg" alt=""> -->
-                                <div class="advantages__slider-item-general">
-                                    <h4 class="advantages__slider-item-title">Безкоштовна доставка</h4>
-                                    <p class="advantages__slider-item-text">За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України</p>
+                            </a>
+                            <a class="advantages__slider-link" href="#">  
+                                <div class="advantages__slider-item">
+                                    <div class="advantages__slider-item-general">
+                                        <h4 class="advantages__slider-item-title">Безкоштовна доставка</h4>
+                                        <p class="advantages__slider-item-text">За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                             <btn class="advantages__slider-arrow-left">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16 31C24.2843 31 31 24.2843 31 16C31 7.71573 24.2843 1 16 1C7.71573 1 1 7.71573 1 16C1 24.2843 7.71573 31 16 31Z" stroke="white"/>
@@ -244,95 +244,98 @@
                                 </div>
                             </div>
                             <div class="categories__general-items">
-                                <div class="categories__general-item item">
-                                    <div class="item__general">
-                                        <div class="item__img">
-                                            <img class="item__img-link" src="img/categories__item1.jpg" alt="">
-                                            <div class="item__sale">
-                                                <p class="item__new-product">Новинка</p>                                                
+                                <a class="categories__link" href="#">
+                                    <div class="categories__general-item item">
+                                        <div class="item__general">
+                                            <div class="item__img">
+                                                <img class="item__img-link" src="img/categories__item1.jpg" alt="">
+                                                <div class="item__sale">
+                                                    <p class="item__new-product">Новинка</p>                                                
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="item__text">
-                                            <p class="item__text-description">Ліжко Рамона</p>
-                                            <p class="item__text-price">8 999 грн</p>
+                                            <div class="item__text">
+                                                <p class="item__text-description">Ліжко Рамона</p>
+                                                <p class="item__text-price">8 999 грн</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="categories__general-item item"> 
-                                    <div class="item__general">                         
-                                        <div class="item__img">
-                                            <img class="item__img-link" src="img/categories__item2.jpg" alt="">
-                                            <div class="item__sale">
-                                                <p class="item__hit">ХІт продаж</p>
-                                                <p class="item__promotional">Акція</p>
+                                </a>
+                                <a class="categories__link" href="#">
+                                    <div class="categories__general-item item"> 
+                                        <div class="item__general">                         
+                                            <div class="item__img">
+                                                <img class="item__img-link" src="img/categories__item2.jpg" alt="">
+                                                <div class="item__sale">
+                                                    <p class="item__hit">ХІт продаж</p>
+                                                    <p class="item__promotional">Акція</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="item__text">
-                                            <p class="item__text-description">Ліжко Честер</p>
-                                            <p class="item__text-price"><span class="item__text-price-new">8 999 грн</span><span class="item__text-price-old">8 999 грн</span></p>
-                                        </div> 
-                                    </div>                                
-                                </div>
-                                <div class="categories__general-item item">    
-                                    <div class="item__general">
-                                        <div class="item__img">
-                                            <img class="item__img-link" src="img/categories__item3.jpg" alt="">
-                                            <div class="item__sale">
-                                                <!-- <p class="item__new-product">Новинка</p>
-                                                <p class="item__promotional">Акція</p> -->
-                                            </div>
-                                        </div>
-                                        <div class="item__text">
-                                            <p class="item__text-description">Ліжко Венеція люкс</p>
-                                            <p class="item__text-price">8 999 грн</p>
-                                        </div>   
+                                            <div class="item__text">
+                                                <p class="item__text-description">Ліжко Честер</p>
+                                                <p class="item__text-price"><span class="item__text-price-new">8 999 грн</span><span class="item__text-price-old">8 999 грн</span></p>
+                                            </div> 
+                                        </div>                                
                                     </div>
-                                </div>
-                                <div class="categories__general-item item"> 
-                                    <div class="item__general">
-                                        <div class="item__img">
-                                            <img class="item__img-link" src="img/categories__item4.jpg" alt="">
-                                            <div class="item__sale">
-                                                <p class="item__new-product">Новинка</p>
-                                                <!-- <p class="item__promotional">Акція</p> -->
+                                </a>
+                                <a class="categories__link" href="#">
+                                    <div class="categories__general-item item">    
+                                        <div class="item__general">
+                                            <div class="item__img">
+                                                <img class="item__img-link" src="img/categories__item3.jpg" alt="">
                                             </div>
+                                            <div class="item__text">
+                                                <p class="item__text-description">Ліжко Венеція люкс</p>
+                                                <p class="item__text-price">8 999 грн</p>
+                                            </div>   
                                         </div>
-                                        <div class="item__text">
-                                            <p class="item__text-description">Ліжко Імперія</p>
-                                            <p class="item__text-price">8 999 грн</p>
-                                        </div> 
                                     </div>
-                                </div>
-                                <div class="categories__general-item item">
-                                    <div class="item__general">                          
-                                        <div class="item__img">
-                                            <img class="item__img-link" src="img/categories__item5.jpg" alt="">
-                                            <div class="item__sale">
-                                                <!-- <p class="item__new-product">Новинка</p>
-                                                <p class="item__promotional">Акція</p> -->
+                                </a>
+                                <a class="categories__link" href="#">
+                                    <div class="categories__general-item item"> 
+                                        <div class="item__general">
+                                            <div class="item__img">
+                                                <img class="item__img-link" src="img/categories__item4.jpg" alt="">
+                                                <div class="item__sale">
+                                                    <p class="item__new-product">Новинка</p>
+                                                </div>
                                             </div>
+                                            <div class="item__text">
+                                                <p class="item__text-description">Ліжко Імперія</p>
+                                                <p class="item__text-price">8 999 грн</p>
+                                            </div> 
                                         </div>
-                                        <div class="item__text">
-                                            <p class="item__text-description">Ліжко Адель</p>
-                                            <p class="item__text-price">8 999 грн</p>
-                                        </div>  
-                                    </div>                               
-                                </div>
-                                <div class="categories__general-item item">
-                                    <div class="item__general">
-                                        <div class="item__img">
-                                            <img class="item__img-link" src="img/categories__item6.jpg" alt="">
-                                            <div class="item__sale">                                            
-                                                <p class="item__hit">Хіт продаж</p>
-                                                <p class="item__promotional">Акція</p>
-                                            </div>
-                                        </div>
-                                        <div class="item__text">
-                                            <p class="item__text-description">Ліжко Атлант</p>
-                                            <p class="item__text-price">8 999 грн</p>
-                                        </div> 
                                     </div>
-                                </div>
+                                </a>
+                                <a class="categories__link" href="#">
+                                    <div class="categories__general-item item">
+                                        <div class="item__general">                          
+                                            <div class="item__img">
+                                                <img class="item__img-link" src="img/categories__item5.jpg" alt="">
+                                            </div>
+                                            <div class="item__text">
+                                                <p class="item__text-description">Ліжко Адель</p>
+                                                <p class="item__text-price">8 999 грн</p>
+                                            </div>  
+                                        </div>                               
+                                    </div>
+                                </a>
+                                <a class="categories__link" href="#">
+                                    <div class="categories__general-item item">
+                                        <div class="item__general">
+                                            <div class="item__img">
+                                                <img class="item__img-link" src="img/categories__item6.jpg" alt="">
+                                                <div class="item__sale">                                            
+                                                    <p class="item__hit">Хіт продаж</p>
+                                                    <p class="item__promotional">Акція</p>
+                                                </div>
+                                            </div>
+                                            <div class="item__text">
+                                                <p class="item__text-description">Ліжко Атлант</p>
+                                                <p class="item__text-price">8 999 грн</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                             <a class="categories__general-link btn" href="#">в каталог</a>
                         </div>
@@ -415,28 +418,28 @@
                         <div class="footer__general-center">
                             <nav class="footer__menu-product">
                                 <ul class="footer__menu-product-list">
-                                    <li class="footer__menu-product-item"><a href="" class="footer__menu-product-link">дивани</a></li>
-                                    <li class="footer__menu-product-item"><a href="" class="footer__menu-product-link">ліжка</a></li>
-                                    <li class="footer__menu-product-item"><a href="" class="footer__menu-product-link">крісла</a></li>
-                                    <li class="footer__menu-product-item"><a href="" class="footer__menu-product-link">шафи</a></li>
-                                    <li class="footer__menu-product-item"><a href="" class="footer__menu-product-link">кухні</a></li>
-                                    <li class="footer__menu-product-item"><a href="" class="footer__menu-product-link">комоди</a></li>
+                                    <li class="footer__menu-product-item"><a class="footer__menu-product-link" href="#">дивани</a></li>
+                                    <li class="footer__menu-product-item"><a class="footer__menu-product-link" href="#">ліжка</a></li>
+                                    <li class="footer__menu-product-item"><a class="footer__menu-product-link" href="#">крісла</a></li>
+                                    <li class="footer__menu-product-item"><a class="footer__menu-product-link" href="#">шафи</a></li>
+                                    <li class="footer__menu-product-item"><a class="footer__menu-product-link" href="#">кухні</a></li>
+                                    <li class="footer__menu-product-item"><a class="footer__menu-product-link" href="#">комоди</a></li>
                                 </ul>
                             </nav>
                             <nav class="footer__menu">
                                 <ul class="footer__menu-list">
-                                    <li class="footer__menu-item"><a href="" class="footer__menu-link">акції</a></li>
-                                    <li class="footer__menu-item"><a href="" class="footer__menu-link">доставка та оплата</a></li>
-                                    <li class="footer__menu-item"><a href="" class="footer__menu-link">про нас</a></li>
-                                    <li class="footer__menu-item"><a href="" class="footer__menu-link">контакти</a></li>
+                                    <li class="footer__menu-item"><a class="footer__menu-link" href="#">доставка та оплата</a></li>
+                                    <li class="footer__menu-item"><a class="footer__menu-link" href="#">про нас</a></li>
+                                    <li class="footer__menu-item"><a class="footer__menu-link" href="#">контакти</a></li>
+                                    <li class="footer__menu-item"><a class="footer__menu-link" href="#">акції</a></li>
                                 </ul>
                             </nav>
                             <div class="footer__contacts">
                                 <p class="footer__contacts-address">TEST</p>
                                 <p class="footer__contacts-time">Пн-Пт, з 10 до 18</p>
                                 <div class="footer__contacts-phone">
-                                    <a href="" class="footer__contacts-phone-link">(099) 111 22 33</a>
-                                    <a href="" class="footer__contacts-phone-link">(099) 222 33 44</a>
+                                    <a class="footer__contacts-phone-link" href="tel:+380991112233">(099) 111 22 33</a>
+                                    <a class="footer__contacts-phone-link" href="tel:+380992223344">(099) 222 33 44</a>
                                 </div>
                                 <div class="footer__contacts-socials socials">
                                     <p class="socials__text">Ми в соціальних мережах:</p>
@@ -474,7 +477,6 @@
             </div>
         </footer>
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
 </body>
 </html>
