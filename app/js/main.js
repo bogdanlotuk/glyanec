@@ -1,5 +1,5 @@
 
-let mySwiper3 = new Swiper (".swiper-container.swiper-advantages", {
+let mySwiper = new Swiper (".swiper-container.swiper-advantages", {
     loop: true,
     navigation: {
         nextEl: '.swiper-button-next',
@@ -23,11 +23,11 @@ let mySwiper3 = new Swiper (".swiper-container.swiper-advantages", {
         1300: {
             slidesPerView: 3,
             spaceBetween: 30,
+        },
+        1800: {
+            slidesPerView: 3,
+            spaceBetween: 30,
         }
-        // 1400: {
-        //     allowTouchMove: false,
-        //     slidesPerView: 4,
-        //     spaceBetween: 30
-        // }
+
     },
 });

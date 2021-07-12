@@ -9,9 +9,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
-    }
-    &__title {
     }
     &__slider {
         margin-top: 2px;
@@ -20,7 +17,6 @@
         justify-content: center;
         width: 100%;
         max-width: 1818px;
-        gap: 30px;
         position: relative;
         .swiper-button-prev {
             position: absolute;
@@ -29,7 +25,6 @@
             left: 20px;
             top: 50%;
             z-index: 10;
-            // transform: translateY(-50%);
             cursor: pointer;
         }
         .swiper-button-prev::after {
@@ -42,7 +37,6 @@
             right: 15px;
             top: 50%;
             z-index: 10;
-            // transform: translateY(-50%);
             cursor: pointer;
         }
         .swiper-button-next::after {
@@ -54,11 +48,9 @@
     }
     &__slider-item {
         max-width: 586px;
-        // width: 586px;
         height: 350px;
         color: $white;
         display: flex;
-        // flex-direction: column;
         align-items: flex-end;
         justify-content: flex-start;  
         position: relative;
@@ -72,13 +64,13 @@
             transition: all 0.5s ease-in-out;
         }
     }
-    &__slider-item:nth-child(1) {
+    .slider-item1 {
         background: center / cover no-repeat url(../img/advantages__slide1.jpg);
     }
-    &__slider-item:nth-child(2) {
+    .slider-item2 {
         background: center / cover no-repeat url(../img/advantages__slide2.jpg);
     }
-    &__slider-item:nth-child(3) {
+    .slider-item3 {
         background: center / cover no-repeat url(../img/advantages__slide3.jpg);
     }
     &__slider-item-general {
@@ -90,10 +82,6 @@
         bottom: -63px;
         gap: 30px;
     }
-
-    &__slider-item-img {
-    }
-
     &__slider-item-title {
         display: flex;
         font-size: 36px;
@@ -102,13 +90,11 @@
         border-bottom: 3px solid $green;
         text-align: left;
     }
-
     &__slider-item-text {
         font-family: 'Proxima Nova';
         max-width: 90%;
         font-size: 18px;
         line-height: 125%;
     }
-
 }
 

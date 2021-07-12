@@ -22,21 +22,17 @@
         display: flex;
         justify-content: flex-start;
         margin-bottom: auto;
-
     }
     &__logo {
         width: 100%;
         margin: 0 0 50px 0;
         padding: 0;
     }
-    &__menu-product {
-    }
     &__menu-product-list {
         display: flex;
         flex-direction: column;
         gap: 14px;
     }
-    &__menu-product-item {}
     &__menu-product-link {
         font-size: 18px;
         line-height: 125%;
@@ -61,7 +57,6 @@
         flex-direction: column;
         gap: 14px;
     }
-    &__menu-item {}
     &__menu-link {
         font-size: 18px;
         line-height: 125%;
@@ -184,28 +179,16 @@
         right: 0;
         z-index: -10;
     }
-    &__img-link {}
     &__arrow-up-link {
         position: absolute;
         top: -18px;
         left: 25px;
     }
-    &__arrow-up-img {
-
-    }
-}
-
-.logo {
 }
 .logo-svg {
     fill: $white;
 }
 .socials {
-    &__text {
-    }
-    &__items {}
-    &__link {        
-    }
     &__link:first-child {  
         margin-left: 2px;
     }

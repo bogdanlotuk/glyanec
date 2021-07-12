@@ -5,13 +5,11 @@
                 margin-left: 20px;
                 margin-right: 0;
             }
-
         }
     }
     .about {
         &__general-img {
             width: 100%;
-
         }
         &__general-img-link {
             max-width: 100%;
@@ -22,7 +20,6 @@
     .questions {
         &__general-img {
             width: 100%;
-
         }
         &__general-img-link {
             max-width: 100%;
@@ -37,17 +34,14 @@
             &__logo {
                 display: none;
             }
-
         }
     }
     .advantages {
         &__slider-item-title {
-
             font-size: 28px;
         }
     }
 }
-
 @media (max-width: 1299.98px) {
     .header {
         .navigation-top {
@@ -70,7 +64,6 @@
     }
     .categories {
         .item:hover {
-
             color: inherit;
             position: relative;
             .item__general{
@@ -83,7 +76,6 @@
         }
     }
 }
-
 @media (max-width: 1199.98px) { 
     .advantages {
         &__slider-item-general {
@@ -98,7 +90,6 @@
             row-gap: 30px;
             justify-content: center;
         }
-        
         .top-item {
             width: 33%;
             margin: 0;
@@ -109,11 +100,9 @@
 @media (max-width: 991.98px) {
     .advantages {
         &__slider-item {
-
             padding: 30px 15px;
         }
         &__slider-item-title {
-
             font-size: 26px;
         }
         &__slider-item-text {
@@ -124,7 +113,6 @@
             gap: 30px;
         }
     }
-
     .categories {
         &__general-top {
             padding: 0;
@@ -132,7 +120,6 @@
         &__img-link {
             max-width: 768px;
             height: auto;
-            // object-fit: cover;
         }
     }
     .about {
@@ -172,13 +159,8 @@
         max-width: 586px !important;
     }
 }
-
 @media (max-width: 767.98px) {
     .header {
-        // .navigation-top {
-            
-        // }
-
         &__top {
             display: none;
         }
@@ -216,11 +198,9 @@
         }
         .item {
             width: 560px;
-
         }
         .item__img-link {
             width: 560px;
-            // object-fit: cover;
         }
     }
     .about {
@@ -271,7 +251,6 @@
             &__text-price,
             &__text-price-new {
                 font-size: 16px;
-
             }
             &__text-price-old {
                 font-size: 14px;
@@ -376,9 +355,6 @@
         .item__general {
             height: 280px;
         }
-        // .item-general {
-        //     height: 200px;
-        // }
         .item__img-link {
             width: 100%;
         }
@@ -389,8 +365,6 @@
         }
         .logo-svg {
             width: 300px;
-        }
-        &__logo {
         }
     }
 }
